@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ALU_stu_18.srcs/sources_1/ip/sys_clk" --include "../../../../ALU_stu_18.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../ALU_stu_18.srcs/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/sim/test_flags_and_result_rom.v" \
+"../../../../ALU_stu_18.srcs/sources_1/ip/test_vector_rom/sim/test_vector_rom.v" \
+"../../../../ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk_clk_wiz.v" \
+"../../../../ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/adder.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/alu.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/arm.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/condlogic.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/controller.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/datapath.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/decoder.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/dmem.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/extend.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/flopenr.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/flopr.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/if_zero.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/imem.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/mux2.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/regfile.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/top.v" \
+"../../../../ALU_stu_18.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

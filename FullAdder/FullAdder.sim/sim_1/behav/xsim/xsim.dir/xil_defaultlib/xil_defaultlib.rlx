@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/OTHERS/vivado_study/FullAdder/FullAdder.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sim_1/new/FullAdder_tb.v,1715519328,verilog,,C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sources_1/new/Fulladder.v,,FullAdder_tb,,,,,,,,
+C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sim_1/new/prefix_adder_tb.v,1715929049,verilog,,,,prefixadd16_tb,,,,,,,,
+C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sources_1/new/Fulladder.v,1715561116,verilog,,,,FullAdder;add,,,,,,,,
+C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sources_1/new/prefix_adder.v,1715565798,verilog,,C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sim_1/new/prefix_adder_tb.v,,pgblackblock;pgblock;prefixadd16;sumblock,,,,,,,,

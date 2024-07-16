@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="test_ROM_distributed_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1720534784">
+  <File Type="PA-TCL" Name="test_ROM_distributed.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="test_ROM_distributed_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="test_ROM_distributed_reports.tcl"/>
+  <File Type="RDS-RDS" Name="test_ROM_distributed.vds"/>
+  <File Type="RDS-UTIL" Name="test_ROM_distributed_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="test_ROM_distributed_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="test_ROM_distributed.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="test_ROM_distributed_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="test_ROM_distributed_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/test_ROM_distributed">
+    <File Path="$PSRCDIR/sources_1/ip/test_ROM_distributed/test_ROM_distributed.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="test_ROM_distributed"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/test_ROM_distributed">
+    <File Path="$PSRCDIR/sources_1/ip/test_ROM_distributed/test_ROM_distributed.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="test_ROM_distributed"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

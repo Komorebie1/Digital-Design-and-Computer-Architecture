@@ -1,0 +1,39 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../exp.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../exp.srcs/sources_1/ip/ila/sim/ila.v" \
+"../../../../exp.srcs/sources_1/ip/verify_RAM/sim/verify_RAM.v" \
+"../../../../exp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../exp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../exp.srcs/sources_1/imports/new/conditional.v" \
+"../../../../exp.srcs/sources_1/imports/new/adder.v" \
+"../../../../exp.srcs/sources_1/imports/new/if_zero.v" \
+"../../../../exp.srcs/sources_1/imports/new/alu.v" \
+"../../../../exp.srcs/sources_1/imports/new/regfile.v" \
+"../../../../exp.srcs/sources_1/imports/new/ROM.v" \
+"../../../../exp.srcs/sources_1/imports/new/controller.v" \
+"../../../../exp.srcs/sources_1/imports/new/top.v" \
+"../../../../exp.srcs/sources_1/imports/new/mux2.v" \
+"../../../../exp.srcs/sources_1/imports/new/datapath.v" \
+"../../../../exp.srcs/sources_1/imports/new/extend.v" \
+"../../../../exp.srcs/sources_1/imports/new/imem.v" \
+"../../../../exp.srcs/sources_1/imports/new/eqcmp.v" \
+"../../../../exp.srcs/sources_1/imports/new/flopenrc.v" \
+"../../../../exp.srcs/sources_1/imports/new/arm.v" \
+"../../../../exp.srcs/sources_1/imports/new/dmem.v" \
+"../../../../exp.srcs/sources_1/imports/new/main_test_pipeline.v" \
+"../../../../exp.srcs/sources_1/imports/new/mux3.v" \
+"../../../../exp.srcs/sources_1/imports/new/ROM_out.v" \
+"../../../../exp.srcs/sources_1/imports/new/floprc.v" \
+"../../../../exp.srcs/sources_1/imports/new/shifter.v" \
+"../../../../exp.srcs/sources_1/imports/new/hazard.v" \
+"../../../../exp.srcs/sources_1/imports/new/flopr.v" \
+"../../../../exp.srcs/sources_1/imports/new/flopenr.v" \
+"../../../../exp.srcs/sources_1/ip/test_ROM_distributed/sim/test_ROM_distributed.v" \
+"../../../../exp.srcs/sources_1/ip/ROM_output/sim/ROM_output.v" \
+"../../../../exp.srcs/sim_1/new/pipelinetb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

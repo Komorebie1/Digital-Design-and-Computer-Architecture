@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ALU_stu_18.srcs/sources_1/ip/sys_clk" \
+"../../../../ALU_stu_18.srcs/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/sim/test_flags_and_result_rom.v" \
+"../../../../ALU_stu_18.srcs/sources_1/ip/test_vector_rom/sim/test_vector_rom.v" \
+"../../../../ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk_clk_wiz.v" \
+"../../../../ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.v" \
+"../../../../ALU_stu_18.srcs/sources_1/imports/new/ALU.v" \
+"../../../../ALU_stu_18.srcs/sources_1/new/top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

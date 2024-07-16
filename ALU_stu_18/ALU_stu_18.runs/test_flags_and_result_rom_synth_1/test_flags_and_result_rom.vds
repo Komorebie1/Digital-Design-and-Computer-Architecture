@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 24 15:15:44 2024
+# Process ID: 13780
+# Current directory: C:/OTHERS/vivado_study/ALU_stu_18/ALU_stu_18.runs/test_flags_and_result_rom_synth_1
+# Command line: vivado.exe -log test_flags_and_result_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_flags_and_result_rom.tcl
+# Log file: C:/OTHERS/vivado_study/ALU_stu_18/ALU_stu_18.runs/test_flags_and_result_rom_synth_1/test_flags_and_result_rom.vds
+# Journal file: C:/OTHERS/vivado_study/ALU_stu_18/ALU_stu_18.runs/test_flags_and_result_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source test_flags_and_result_rom.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP test_flags_and_result_rom, cache-ID = 09582988f29cc10e.
+INFO: [Common 17-206] Exiting Vivado at Fri May 24 15:16:02 2024...

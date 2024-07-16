@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="alu_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="alu_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4529533fs"></ZoomStartTime>
+      <ZoomEndTime time="4882334fs"></ZoomEndTime>
+      <Cursor1Time time="4588333fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="250"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/alu_tb/uut/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/clk_osc" type="logic">
+      <obj_property name="ElementShortName">clk_osc</obj_property>
+      <obj_property name="ObjectShortName">clk_osc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/test" type="logic">
+      <obj_property name="ElementShortName">test</obj_property>
+      <obj_property name="ObjectShortName">test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/r_rst_temp" type="logic">
+      <obj_property name="ElementShortName">r_rst_temp</obj_property>
+      <obj_property name="ObjectShortName">r_rst_temp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/r_rst" type="logic">
+      <obj_property name="ElementShortName">r_rst</obj_property>
+      <obj_property name="ObjectShortName">r_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/r_vaild" type="logic">
+      <obj_property name="ElementShortName">r_vaild</obj_property>
+      <obj_property name="ObjectShortName">r_vaild</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/r_cnt" type="array">
+      <obj_property name="ElementShortName">r_cnt[6:0]</obj_property>
+      <obj_property name="ObjectShortName">r_cnt[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/w_test_vector" type="array">
+      <obj_property name="ElementShortName">w_test_vector[65:0]</obj_property>
+      <obj_property name="ObjectShortName">w_test_vector[65:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/w_a" type="array">
+      <obj_property name="ElementShortName">w_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/w_b" type="array">
+      <obj_property name="ElementShortName">w_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/w_alu_ctrl" type="array">
+      <obj_property name="ElementShortName">w_alu_ctrl[1:0]</obj_property>
+      <obj_property name="ObjectShortName">w_alu_ctrl[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/r_a" type="array">
+      <obj_property name="ElementShortName">r_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/r_b" type="array">
+      <obj_property name="ElementShortName">r_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/r_alu_ctrl" type="array">
+      <obj_property name="ElementShortName">r_alu_ctrl[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_alu_ctrl[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/w_flags_and_result_rom" type="array">
+      <obj_property name="ElementShortName">w_flags_and_result_rom[35:0]</obj_property>
+      <obj_property name="ObjectShortName">w_flags_and_result_rom[35:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/w_result_rom" type="array">
+      <obj_property name="ElementShortName">w_result_rom[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_result_rom[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/w_alu_flags_rom" type="array">
+      <obj_property name="ElementShortName">w_alu_flags_rom[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w_alu_flags_rom[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/r_result_rom" type="array">
+      <obj_property name="ElementShortName">r_result_rom[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_result_rom[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/r_alu_flags_rom" type="array">
+      <obj_property name="ElementShortName">r_alu_flags_rom[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_alu_flags_rom[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/w_result" type="array">
+      <obj_property name="ElementShortName">w_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/uut/w_alu_flags" type="array">
+      <obj_property name="ElementShortName">w_alu_flags[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w_alu_flags[3:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,755 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul  5 16:15:04 2024
+# Process ID: 19040
+# Current directory: C:/OTHERS/vivado_study/exp/exp.runs/synth_1
+# Command line: vivado.exe -log main_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_test.tcl
+# Log file: C:/OTHERS/vivado_study/exp/exp.runs/synth_1/main_test.vds
+# Journal file: C:/OTHERS/vivado_study/exp/exp.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main_test.tcl -notrace
+Command: synth_design -top main_test -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25924 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 493.207 ; gain = 96.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main_test' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/.Xil/Vivado-19040-BBIN/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (1#1) [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/.Xil/Vivado-19040-BBIN/realtime/clk_wiz_1_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_wiz_1_inst' of module 'clk_wiz_1' requires 4 connections, but only 3 given [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:97]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/ROM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'test_ROM_distributed' [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/.Xil/Vivado-19040-BBIN/realtime/test_ROM_distributed_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'test_ROM_distributed' (2#1) [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/.Xil/Vivado-19040-BBIN/realtime/test_ROM_distributed_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'spo' does not match port width (16) of module 'test_ROM_distributed' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/ROM.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (3#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/ROM.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'data' does not match port width (32) of module 'ROM' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:105]
+INFO: [Synth 8-6157] synthesizing module 'ROM_out' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/ROM_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM_output' [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/.Xil/Vivado-19040-BBIN/realtime/ROM_output_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_output' (4#1) [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/.Xil/Vivado-19040-BBIN/realtime/ROM_output_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (10) of module 'ROM_output' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/ROM_out.v:29]
+WARNING: [Synth 8-689] width (32) of port connection 'spo' does not match port width (16) of module 'ROM_output' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/ROM_out.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_out' (5#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/ROM_out.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'data' does not match port width (32) of module 'ROM_out' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:110]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'arm' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/arm.v:4]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (6#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/decoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'condlogic' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/condlogic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenr' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/flopenr.v:23]
+	Parameter width bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr' (7#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/flopenr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'condcheck' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/condlogic.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'condcheck' (8#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/condlogic.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'condlogic' (9#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/condlogic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (10#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/datapath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/mux2.v:23]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (11#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/mux2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/floper.v:2]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (12#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/floper.v:2]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/adder.v:4]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (13#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/adder.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/mux2.v:23]
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (13#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/mux2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/regfile.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (14#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/regfile.v:4]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/extend.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (15#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/extend.v:4]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/shifter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (16#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/shifter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/alu.v:23]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'if_zero' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/if_zero.v:23]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'if_zero' (17#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/if_zero.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (18#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (19#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/datapath.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'arm' (20#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/arm.v:4]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/imem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (21#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/dmem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (22#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/dmem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (23#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'verify_RAM' [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/.Xil/Vivado-19040-BBIN/realtime/verify_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'verify_RAM' (24#1) [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/.Xil/Vivado-19040-BBIN/realtime/verify_RAM_stub.v:6]
+WARNING: [Synth 8-689] width (11) of port connection 'a' does not match port width (6) of module 'verify_RAM' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:129]
+WARNING: [Synth 8-689] width (1) of port connection 'spo' does not match port width (16) of module 'verify_RAM' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:133]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:136]
+INFO: [Synth 8-6157] synthesizing module 'ila' [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/.Xil/Vivado-19040-BBIN/realtime/ila_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila' (25#1) [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/.Xil/Vivado-19040-BBIN/realtime/ila_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ROM_inst'. This will prevent further optimization [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:103]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_inst'. This will prevent further optimization [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:136]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mcu'. This will prevent further optimization [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:113]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'verify_RAM_inst'. This will prevent further optimization [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:128]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ROM_out_inst'. This will prevent further optimization [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'main_test' (26#1) [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/main_test.v:23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[7]
+WARNING: [Synth 8-3331] design imem has unconnected port a[1]
+WARNING: [Synth 8-3331] design imem has unconnected port a[0]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[26]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[25]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[24]
+WARNING: [Synth 8-3331] design controller has unconnected port Instr[19]
+WARNING: [Synth 8-3331] design controller has unconnected port Instr[18]
+WARNING: [Synth 8-3331] design controller has unconnected port Instr[17]
+WARNING: [Synth 8-3331] design controller has unconnected port Instr[16]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[31]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[30]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[29]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[28]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[27]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[26]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[25]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[24]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[23]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[22]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[21]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[20]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[19]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[18]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[17]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[16]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[15]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[14]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[13]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[12]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[11]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 553.410 ; gain = 156.859
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 553.410 ; gain = 156.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 553.410 ; gain = 156.859
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/ila/ila/ila_in_context.xdc] for cell 'ila_inst'
+Finished Parsing XDC File [c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/ila/ila/ila_in_context.xdc] for cell 'ila_inst'
+Parsing XDC File [c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_wiz_1_inst'
+Finished Parsing XDC File [c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_wiz_1_inst'
+Parsing XDC File [c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/verify_RAM/verify_RAM/verify_RAM_in_context.xdc] for cell 'verify_RAM_inst'
+Finished Parsing XDC File [c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/verify_RAM/verify_RAM/verify_RAM_in_context.xdc] for cell 'verify_RAM_inst'
+Parsing XDC File [c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/ROM_output/ROM_output/ROM_output_in_context.xdc] for cell 'ROM_out_inst/ROM_output_inst'
+Finished Parsing XDC File [c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/ROM_output/ROM_output/ROM_output_in_context.xdc] for cell 'ROM_out_inst/ROM_output_inst'
+Parsing XDC File [c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/test_ROM_distributed/test_ROM_distributed/test_ROM_distributed_in_context.xdc] for cell 'ROM_inst/test_ROM_distributed_inst'
+Finished Parsing XDC File [c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/test_ROM_distributed/test_ROM_distributed/test_ROM_distributed_in_context.xdc] for cell 'ROM_inst/test_ROM_distributed_inst'
+Parsing XDC File [C:/OTHERS/vivado_study/exp/exp.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/OTHERS/vivado_study/exp/exp.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/OTHERS/vivado_study/exp/exp.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/OTHERS/vivado_study/exp/exp.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.430 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 901.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 901.430 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 901.430 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'verify_RAM_inst' at clock pin 'clk' is different from the actual clock period '16.667', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 901.430 ; gain = 504.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 901.430 ; gain = 504.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_osc. (constraint file  c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_osc. (constraint file  c:/OTHERS/vivado_study/exp/exp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for ila_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_wiz_1_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for verify_RAM_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ROM_out_inst/ROM_output_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ROM_inst/test_ROM_distributed_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 901.430 ; gain = 504.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "NoWrite" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "RAM_reg[65]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[65]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[64]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[64]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[63]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[63]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[62]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[62]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[61]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[61]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[60]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[60]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "ROMWrite" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'NoWrite_reg' [C:/OTHERS/vivado_study/exp/exp.srcs/sources_1/new/decoder.v:35]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 901.430 ; gain = 504.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 68    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	              480 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 145   
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 204   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+Module decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     11 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 2     
+Module flopenr 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---RAMs : 
+	              480 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+Module shifter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module dmem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 66    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 132   
+	   2 Input      1 Bit        Muxes := 199   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "ROMWrite" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port adr_from_top[7]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[31]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[30]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[29]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[28]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[27]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[26]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[25]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[24]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[23]
+WARNING: [Synth 8-3331] design ROM_out has unconnected port address[22]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 905.062 ; gain = 508.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|imem        | p_0_out    | 32x32         | LUT            | 
+|top         | p_0_out    | 32x32         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------+-----------+----------------------+---------------+
+|mcu         | arm/dp/rf/rf_reg | Implied   | 16 x 32              | RAM32M x 18   | 
++------------+------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_1_inst/clk_out1' to pin 'clk_wiz_1_inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 905.062 ; gain = 508.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:41 . Memory (MB): peak = 1293.434 ; gain = 896.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------+-----------+----------------------+---------------+
+|mcu         | arm/dp/rf/rf_reg | Implied   | 16 x 32              | RAM32M x 18   | 
++------------+------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 1293.434 ; gain = 896.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module clk_wiz_1_inst has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1293.434 ; gain = 896.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1293.434 ; gain = 896.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1293.434 ; gain = 896.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1293.434 ; gain = 896.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1293.434 ; gain = 896.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1293.434 ; gain = 896.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |test_ROM_distributed |         1|
+|2     |ROM_output           |         1|
+|3     |clk_wiz_1            |         1|
+|4     |verify_RAM           |         1|
+|5     |ila                  |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |ROM_output           |     1|
+|2     |clk_wiz_1            |     1|
+|3     |ila                  |     1|
+|4     |test_ROM_distributed |     1|
+|5     |verify_RAM           |     1|
+|6     |CARRY4               |    35|
+|7     |LUT1                 |     4|
+|8     |LUT2                 |    62|
+|9     |LUT3                 |   451|
+|10    |LUT4                 |    62|
+|11    |LUT5                 |  2194|
+|12    |LUT6                 |  1195|
+|13    |MUXF7                |   224|
+|14    |MUXF8                |    64|
+|15    |RAM32M               |    18|
+|16    |FDCE                 |    80|
+|17    |FDPE                 |     8|
+|18    |FDRE                 |  2113|
+|19    |LD                   |     1|
+|20    |IBUF                 |     1|
+|21    |OBUF                 |     1|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+-------------------+-----------+------+
+|      |Instance           |Module     |Cells |
++------+-------------------+-----------+------+
+|1     |top                |           |  6563|
+|2     |  ROM_inst         |ROM        |    16|
+|3     |  ROM_out_inst     |ROM_out    |    16|
+|4     |  mcu              |top        |  6406|
+|5     |    arm            |arm        |  2882|
+|6     |      c            |controller |    11|
+|7     |        cl         |condlogic  |    10|
+|8     |          flagreg0 |flopenr    |     4|
+|9     |          flagreg1 |flopenr_1  |     6|
+|10    |        dec        |decoder    |     1|
+|11    |      dp           |datapath   |  2871|
+|12    |        alu        |alu        |    32|
+|13    |        pcadd1     |adder      |     8|
+|14    |        pcadd2     |adder_0    |     8|
+|15    |        pcreg      |flopr      |  2805|
+|16    |        rf         |regfile    |    18|
+|17    |    dmem           |dmem       |  3524|
++------+-------------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1293.434 ; gain = 896.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 50 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:40 . Memory (MB): peak = 1293.434 ; gain = 548.863
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1293.434 ; gain = 896.883
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 342 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1293.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  LD => LDCE: 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+178 Infos, 111 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:48 . Memory (MB): peak = 1293.434 ; gain = 898.664
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1293.434 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/OTHERS/vivado_study/exp/exp.runs/synth_1/main_test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_test_utilization_synth.rpt -pb main_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  5 16:15:58 2024...

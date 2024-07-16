@@ -1,0 +1,23 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 55b1f02b54614eb797e20354b68bd416 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot prefixadd16_tb_behav xil_defaultlib.prefixadd16_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sources_1/new/prefix_adder.v" Line 1. Module prefixadd16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sources_1/new/prefix_adder.v" Line 77. Module pgblock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sources_1/new/prefix_adder.v" Line 86. Module pgblackblock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sources_1/new/prefix_adder.v" Line 86. Module pgblackblock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sources_1/new/prefix_adder.v" Line 86. Module pgblackblock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sources_1/new/prefix_adder.v" Line 86. Module pgblackblock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/OTHERS/vivado_study/FullAdder/FullAdder.srcs/sources_1/new/prefix_adder.v" Line 95. Module sumblock doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pgblock
+Compiling module xil_defaultlib.pgblackblock
+Compiling module xil_defaultlib.sumblock
+Compiling module xil_defaultlib.prefixadd16
+Compiling module xil_defaultlib.prefixadd16_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot prefixadd16_tb_behav
